@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Singh | Web Developer</title>
+    <meta name="description"
+        content="Portfolio of Jatin Singh, a passionate Web Developer skilled in PHP, MySQL, Bootstrap, JavaScript, HTML, and CSS.">
+    <meta name="keywords" content="Jatin Singh, Web Developer, PHP Developer, Frontend Designer, Portfolio">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode" id="body">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="logo-text">JATIN SINGH<span>.</span></span>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar" id="navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="#home">JS<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                            <i class="fas fa-sun" id="theme-icon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="Jatin_Singh_Professional_Resume (1).pdf" class="btn btn-primary btn-download" download>
+                            Download Resume <i class="fas fa-download ms-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="animated-bg"></div>
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row mt-5 mt-lg-0">
+                <div class="col-lg-6 hero-content text-center text-lg-start" data-aos="fade-right"
+                    data-aos-duration="1000">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Jatin <span>Singh</span></h1>
+                    <h2 class="typing-container">
+                        <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="intro">
+                        Passionate Web Developer with experience in PHP, MySQL, Bootstrap, JavaScript, AJAX, HTML and
+                        CSS.
+                    </p>
+                    <div class="hero-buttons d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
+                        <a href="#contact" class="btn btn-primary btn-lg">Hire Me <i
+                                class="fas fa-paper-plane ms-2"></i></a>
+                        <a href="Jatin_Singh_Professional_Resume (1).pdf" class="btn btn-outline-light btn-lg" download>Download Resume
+                            <i class="fas fa-download ms-2"></i></a>
+                    </div>
+                    <div class="social-icons mt-5">
+                        <a href="https://www.linkedin.com/jobs/" target="_blank" class="social-icon" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://x.com/" target="_blank" class="social-icon" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image-container">
+                        <div class="blob-shape"></div>
+                        <img src="singhjatin.jpeg"
+                            alt="Jatin Singh" class="hero-image img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Discover</span>
+                <h2>About <span>Me</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="about-img-wrapper glass-card p-4">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="About Me" class="img-fluid rounded-4 mb-3">
+                        <div class="row text-center mt-4">
+                            <div class="col-6">
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-box">
+                                    <h3 class="counter" data-target="15">0</h3><span>+</span>
+                                    <p>Projects Done</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0 ps-lg-5" data-aos="fade-left">
+<h3 class="mb-4">Passionate Web Developer</h3>
+<p class="about-text">
+I am a dedicated Web Developer with hands-on experience in building modern, responsive, and user-friendly websites. 
+I specialize in creating clean UI designs and interactive web applications using modern web technologies. 
+I am continuously learning and improving my skills to build better and more efficient digital experiences.
+</p>
+                    <div class="profile-info glass-card p-4 mt-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-user"></i>
+                                    <div>
+                                        <span class="label">Name</span>
+                                        <span class="value">Jatin Singh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <span class="label">Email</span>
+                                        <span class="value"><a
+                                                href="mailto:jatins7008@gmail.com">jatins7008@gmail.com</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <span class="label">Phone</span>
+                                        <span class="value"><a href="tel:+917307054629">+91 7307054629</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <span class="label">Location</span>
+                                        <span class="value">Shahjahanpur, UP, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">What I Do</span>
+                <h2>My <span>Services</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row mt-5 g-4">
+                <!-- Service 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Website Development</h3>
+                        <p>Complete custom website development tailored to your specific business needs.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fab fa-php"></i></div>
+                        <h3>PHP Development</h3>
+                        <p>Robust backend solutions and dynamic web applications using PHP and MySQL.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Frontend Design</h3>
+                        <p>Creating visually stunning, modern, and user-friendly interfaces with HTML/CSS/JS.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring your website looks perfect on all devices, from desktops to smartphones.</p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-cogs"></i></div>
+                        <h3>Admin Panel Dev</h3>
+                        <p>Custom admin dashboards for easy management of your website content and users.</p>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-hands-helping"></i></div>
+                        <h3>NGO Websites</h3>
+                        <p>Specialized websites for NGOs with donation features and membership systems.</p>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-shopping-cart"></i></div>
+                        <h3>E-commerce</h3>
+                        <p>Full-featured online stores to help you sell products seamlessly on the web.</p>
+                    </div>
+                </div>
+                <!-- Service 8 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-tools"></i></div>
+                        <h3>Website Maintenance</h3>
+                        <p>Ongoing support, updates, bug fixing, and optimization for existing websites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">My Expertise</span>
+                <h2>Technical <span>Skills</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="skills-content glass-card p-4">
+                        <h3 class="mb-4">Programming & Design</h3>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>PHP</h5>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>HTML5 & CSS3</h5>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>JavaScript & AJAX</h5>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5>Bootstrap 5</h5>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                    <div class="skills-content glass-card p-4 h-100">
+                        <h3 class="mb-4">Tools & Database</h3>
+
+                        <div class="row text-center mt-4 g-4">
+                            <div class="col-6 col-md-4">
+                                <div class="circular-skill">
+                                    <div class="circle" data-percent="80">
+                                        <i class="fas fa-database text-primary"></i>
+                                    </div>
+                                    <h4>MySQL</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="circular-skill">
+                                    <div class="circle" data-percent="75">
+                                        <i class="fab fa-github text-primary"></i>
+                                    </div>
+                                    <h4>GitHub</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="circular-skill">
+                                    <div class="circle" data-percent="90">
+                                        <i class="fas fa-code text-primary"></i>
+                                    </div>
+                                    <h4>VS Code</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <p class="text-muted">Continuously learning and adapting to new technologies and frameworks
+                                to deliver the best possible solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">My Portfolio</span>
+                <h2>Recent <span>Projects</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row mt-5 g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card glass-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Nirton Prime" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://nirtonprime.in" target="_blank" class="btn btn-primary btn-sm mx-1"><i
+                                        class="fas fa-external-link-alt"></i> Live</a>
+                                <button class="btn btn-light btn-sm mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal1"><i class="fas fa-info-circle"></i> Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <span class="badge bg-primary mb-2">E-Commerce</span>
+                            <h3>Nirton Prime</h3>
+                            <p>Responsive E-Commerce Website developed using PHP, Bootstrap and MySQL.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card glass-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="SPLAAS Foundation" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://splaas.in" target="_blank" class="btn btn-primary btn-sm mx-1"><i
+                                        class="fas fa-external-link-alt"></i> Live</a>
+                                <button class="btn btn-light btn-sm mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal2"><i class="fas fa-info-circle"></i> Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <span class="badge bg-primary mb-2">NGO</span>
+                            <h3>SPLAAS Foundation</h3>
+                            <p>NGO Website with Membership System, Donation Functionality and Admin Panel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card glass-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Digibrandix" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://digibrandix.com" target="_blank" class="btn btn-primary btn-sm mx-1"><i
+                                        class="fas fa-external-link-alt"></i> Live</a>
+                                <button class="btn btn-light btn-sm mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal3"><i class="fas fa-info-circle"></i> Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <span class="badge bg-primary mb-2">Agency</span>
+                            <h3>Digibrandix</h3>
+                            <p>Marketing Agency Website with interactive Lead Generation System.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">Nirton Prime Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded mb-3" alt="Nirton Prime">
+                    <p>A full-fledged responsive E-Commerce platform built from scratch. Features include product
+                        catalog, shopping cart, user authentication, and secure checkout simulation.</p>
+                    <div class="mt-3">
+                        <strong>Technologies Used:</strong>
+                        <div class="mt-2">
+                            <span class="badge bg-secondary me-1">PHP</span>
+                            <span class="badge bg-secondary me-1">MySQL</span>
+                            <span class="badge bg-secondary me-1">Bootstrap 5</span>
+                            <span class="badge bg-secondary">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">SPLAAS Foundation Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded mb-3" alt="SPLAAS Foundation">
+                    <p>A comprehensive web portal for an NGO. Includes custom membership registration, secure donation
+                        flow tracking, and a powerful admin panel to manage records and content.</p>
+                    <div class="mt-3">
+                        <strong>Technologies Used:</strong>
+                        <div class="mt-2">
+                            <span class="badge bg-secondary me-1">PHP</span>
+                            <span class="badge bg-secondary me-1">MySQL</span>
+                            <span class="badge bg-secondary me-1">AJAX</span>
+                            <span class="badge bg-secondary">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">Digibrandix Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded mb-3" alt="Digibrandix">
+                    <p>A sleek, high-performance website for a marketing agency designed to maximize conversions.
+                        Integrates a custom lead generation system and CRM connection.</p>
+                    <div class="mt-3">
+                        <strong>Technologies Used:</strong>
+                        <div class="mt-2">
+                            <span class="badge bg-secondary me-1">HTML5/CSS3</span>
+                            <span class="badge bg-secondary me-1">JavaScript</span>
+                            <span class="badge bg-secondary me-1">PHP</span>
+                            <span class="badge bg-secondary">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience & Education Section -->
+    <section id="resume" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Experience -->
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="section-title mb-5">
+                        <span class="subtitle">My Journey</span>
+                        <h2>Professional <span>Experience</span></h2>
+                        <div class="line ms-0"></div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-item glass-card p-4">
+                            <div class="timeline-dot"></div>
+                            <h4 class="role">Web Developer Intern / Junior Web Developer</h4>
+                            <h5 class="company text-primary"><i class="fas fa-building me-2"></i>ZDC Tech Global
+                                Solutions, Jaipur</h5>
+                            <span class="duration text-muted d-block mb-3"><i
+                                    class="fas fa-calendar-alt me-2"></i>Duration: 6 Months</span>
+
+                            <h6 class="mb-2">Key Responsibilities:</h6>
+                            <ul class="responsibilities-list">
+                                <li><i class="fas fa-check text-primary me-2"></i> Responsive Website Development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Admin Panel Development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Database Integration & Management
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Website Optimization for performance
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Bug Fixing & Maintenance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Feature Development based on client
+                                    specs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-title mb-5">
+                        <span class="subtitle">Academic</span>
+                        <h2>My <span>Education</span></h2>
+                        <div class="line ms-0"></div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-item glass-card p-4 mb-4">
+                            <div class="timeline-dot"></div>
+                            <h4>Web Development Course</h4>
+                            <h5 class="institution text-primary">Pratap Nagar Jaipur</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>Completed May
+                                2024</span>
+                        </div>
+
+                        <div class="timeline-item glass-card p-4 mb-4">
+                            <div class="timeline-dot"></div>
+                            <h4>ITI Diploma</h4>
+                            <h5 class="institution text-primary">UP Board</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>2022</span>
+                        </div>
+
+                        <div class="timeline-item glass-card p-4 mb-4">
+                            <div class="timeline-dot"></div>
+                            <h4>Senior Secondary (12th)</h4>
+                            <h5 class="institution text-primary">UP Board</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>2020</span>
+                        </div>
+
+                        <div class="timeline-item glass-card p-4">
+                            <div class="timeline-dot"></div>
+                            <h4>High School (10th)</h4>
+                            <h5 class="institution text-primary">UP Board</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Interests</span>
+                <h2>My <span>Hobbies</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row justify-content-center mt-5 g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-cricket"></i>
+                            <!-- Note: Using baseball-bat-ball or similar if cricket missing, but let's use a generic ball or person-batting -->
+                            <i class="fas fa-baseball-bat-ball"></i>
+                        </div>
+                        <h4>Cricket</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-headphones-alt"></i>
+                        </div>
+                        <h4>Listening to Music</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>Reading Books</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Get In Touch</span>
+                <h2>Contact <span>Me</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info glass-card p-5 h-100">
+                        <h3 class="mb-4">Let's Discuss Your Project</h3>
+                        <p class="text-muted mb-4">Feel free to reach out to me for any web development projects,
+                            freelance opportunities, or job offers.</p>
+
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box-sm">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Phone</h5>
+                                <a href="tel:+917307054629" class="text-decoration-none">7307054629</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box-sm">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Email</h5>
+                                <a href="mailto:jatins7008@gmail.com"
+                                    class="text-decoration-none">jatins7008@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-center mb-5">
+                            <div class="icon-box-sm">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Location</h5>
+                                <span>Shahjahanpur, Uttar Pradesh</span>
+                            </div>
+                        </div>
+
+                        <h4>Follow Me</h4>
+                        <div class="social-icons-contact mt-3">
+                            <a href="https://www.linkedin.com/jobs/" class="social-icon-sm"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/" class="social-icon-sm"><i class="fab fa-github"></i></a>
+                            <a href="https://x.com/" class="social-icon-sm"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="social-icon-sm"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+                    <div class="contact-form-wrapper glass-card p-5">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" name="subject" class="form-control" id="subject"
+                                            placeholder="Subject" required>
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="form-floating">
+                                        <textarea name="message" class="form-control" id="message" placeholder="Message"
+                                            style="height: 150px" required></textarea>
+                                        <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Message <i
+                                            class="fas fa-paper-plane ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-container glass-card p-2 mt-4" data-aos="fade-up">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14109.924970551272!2d79.90359744106118!3d27.85648368140479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399fa34bb3f2cf65%3A0x32c47eeeb488eeb0!2sDalel%20Ganj%2C%20Shahjahanpur%2C%20Uttar%20Pradesh%20242001!5e0!3m2!1sen!2sin!4v1781244238544!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a class="navbar-brand logo mb-3 d-block" href="#home">JS<span>.</span></a>
+                    <p class="text-muted pe-lg-5">A passionate Web Developer focused on crafting clean, responsive, and
+                        user-friendly web experiences.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right me-2"></i>About</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right me-2"></i>Projects</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title">Connect</h4>
+                    <!-- Facebook -->
+<a href="https://www.facebook.com/singh.shabh.3979" class="me-3">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/" class="me-3">
+  <i class="fab fa-instagram"></i>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/jobs/">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+    <p class="text-muted"><i class="fas fa-envelope me-2 text-primary"></i> jatins7008@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-5 pt-4 border-top border-secondary">
+                <p class="mb-0">&copy; 2026 Jatin Singh. Web Developer | PHP Developer. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
