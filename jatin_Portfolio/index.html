@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Singh | Web Developer (React.js, Node.js, Laravel, Tailwind CSS)</title>
+    <meta name="description"
+        content="Portfolio of Jatin Singh, a passionate Web Developer skilled in React.js, Node.js, Laravel, Tailwind CSS, PHP, and MySQL.">
+    <meta name="keywords" content="Jatin Singh, Web Developer, React Developer, Node.js, Laravel, Tailwind CSS, Portfolio">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode" id="body">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="logo-text">JATIN SINGH<span>.</span></span>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar" id="navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="#home">JS<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                            <i class="fas fa-sun" id="theme-icon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="Jatin_Singh_Professional_Resume (1).pdf" class="btn btn-primary btn-download" download>
+                            Download Resume <i class="fas fa-download ms-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="animated-bg"></div>
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row mt-5 mt-lg-0">
+                <div class="col-lg-6 hero-content text-center text-lg-start" data-aos="fade-right"
+                    data-aos-duration="1000">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Jatin <span>Singh</span></h1>
+                    <h2 class="typing-container">
+                        <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="intro">
+                        Passionate Web Developer specialized in <strong>React.js, Node.js, Laravel, and Tailwind CSS</strong>. Building responsive web applications, interactive user interfaces, and robust backend solutions.
+                    </p>
+                    <div class="hero-buttons d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
+                        <a href="#contact" class="btn btn-primary btn-lg">Hire Me <i
+                                class="fas fa-paper-plane ms-2"></i></a>
+                        <a href="Jatin_Singh_Professional_Resume (1).pdf" class="btn btn-outline-light btn-lg" download>Download Resume
+                            <i class="fas fa-download ms-2"></i></a>
+                    </div>
+                    <div class="social-icons mt-5">
+                        <a href="https://www.linkedin.com/jobs/" target="_blank" class="social-icon" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/jatins7008" target="_blank" class="social-icon" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://x.com/" target="_blank" class="social-icon" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image-container">
+                        <div class="blob-shape"></div>
+                        <div class="hero-avatar-wrapper">
+                            <img src="singhjatin.jpeg" alt="Jatin Singh - Web Developer" class="hero-image img-fluid">
+                            <div class="avatar-ring"></div>
+                        </div>
+
+                        <!-- Interactive Floating Tech Badges -->
+                        <div class="floating-tech-badge badge-react" title="React.js - Interactive UI & Hooks">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="floating-tech-badge badge-node" title="Node.js - Scalable Event-Driven APIs">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="floating-tech-badge badge-laravel" title="Laravel - Robust MVC & REST Architecture">
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
+                        </div>
+                        <div class="floating-tech-badge badge-tailwind" title="Tailwind CSS - Modern Utility Design">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <!-- Bottom Floating Status Card -->
+                        <div class="hero-exp-card">
+                            <span class="live-indicator"></span>
+                            <span class="text-white small fw-bold">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tech Stack Marquee Ribbon -->
+    <div class="tech-marquee-wrapper py-3">
+        <div class="tech-marquee-track">
+            <span class="marquee-item"><i class="fab fa-react text-info me-2"></i>React.js</span>
+            <span class="marquee-item"><i class="fab fa-node-js text-success me-2"></i>Node.js</span>
+            <span class="marquee-item"><i class="fab fa-laravel text-danger me-2"></i>Laravel</span>
+            <span class="marquee-item"><i class="fab fa-css3-alt text-primary me-2"></i>Tailwind CSS</span>
+            <span class="marquee-item"><i class="fab fa-js-square text-warning me-2"></i>JavaScript (ES6+)</span>
+            <span class="marquee-item"><i class="fab fa-php text-primary me-2"></i>PHP 8.x</span>
+            <span class="marquee-item"><i class="fas fa-server text-info me-2"></i>MySQL</span>
+            <span class="marquee-item"><i class="fab fa-bootstrap me-2" style="color: #7952b3;"></i>Bootstrap 5</span>
+            <span class="marquee-item"><i class="fas fa-cubes text-primary me-2"></i>Redux Toolkit</span>
+            <span class="marquee-item"><i class="fas fa-network-wired text-warning me-2"></i>REST APIs</span>
+            <span class="marquee-item"><i class="fab fa-git-alt text-danger me-2"></i>Git & GitHub</span>
+            <!-- Seamless loop duplicate -->
+            <span class="marquee-item"><i class="fab fa-react text-info me-2"></i>React.js</span>
+            <span class="marquee-item"><i class="fab fa-node-js text-success me-2"></i>Node.js</span>
+            <span class="marquee-item"><i class="fab fa-laravel text-danger me-2"></i>Laravel</span>
+            <span class="marquee-item"><i class="fab fa-css3-alt text-primary me-2"></i>Tailwind CSS</span>
+            <span class="marquee-item"><i class="fab fa-js-square text-warning me-2"></i>JavaScript (ES6+)</span>
+            <span class="marquee-item"><i class="fab fa-php text-primary me-2"></i>PHP 8.x</span>
+            <span class="marquee-item"><i class="fas fa-server text-info me-2"></i>MySQL</span>
+            <span class="marquee-item"><i class="fab fa-bootstrap me-2" style="color: #7952b3;"></i>Bootstrap 5</span>
+            <span class="marquee-item"><i class="fas fa-cubes text-primary me-2"></i>Redux Toolkit</span>
+            <span class="marquee-item"><i class="fas fa-network-wired text-warning me-2"></i>REST APIs</span>
+            <span class="marquee-item"><i class="fab fa-git-alt text-danger me-2"></i>Git & GitHub</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Discover</span>
+                <h2>About <span>Me</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="about-img-wrapper glass-card p-4">
+                        <img src="about_jatin.jpg"
+                            alt="Jatin Singh - Web Developer" class="img-fluid rounded-4 mb-3 w-100">
+                        <div class="row text-center mt-4 justify-content-center">
+                            <div class="col-12">
+                                <div class="stat-box">
+                                    <h3 class="counter" data-target="1">0</h3><span>+</span>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0 ps-lg-5" data-aos="fade-left">
+                    <h3 class="mb-4">Passionate Web Developer</h3>
+                    <p class="about-text">
+                        I am a dedicated Web Developer with hands-on experience in building modern, responsive, and user-friendly websites. 
+                        I specialize in creating clean UI designs and interactive web applications using modern web technologies. 
+                        I am continuously learning and improving my skills to build better and more efficient digital experiences.
+                    </p>
+                    <div class="profile-info glass-card p-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-user"></i>
+                                    <div>
+                                        <span class="label">Name</span>
+                                        <span class="value">Jatin Singh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <span class="label">Email</span>
+                                        <span class="value"><a
+                                                href="mailto:jatins7008@gmail.com">jatins7008@gmail.com</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <span class="label">Phone</span>
+                                        <span class="value"><a href="tel:+917307054629">+91 7307054629</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <span class="label">Location</span>
+                                        <span class="value">Shahjahanpur, UP, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">What I Do</span>
+                <h2>My <span>Services</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row mt-5 g-4">
+                <!-- Service 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fab fa-react text-info"></i></div>
+                        <h3>React.js Frontend Apps</h3>
+                        <p>High-performance Single Page Applications (SPAs) with state management using Redux Toolkit.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fab fa-node-js text-success"></i></div>
+                        <h3>Node.js Backend Solutions</h3>
+                        <p>Fast, event-driven backend services, modular RESTful APIs, and secure JWT authentication.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fab fa-laravel text-danger"></i></div>
+                        <h3>Laravel & PHP Systems</h3>
+                        <p>Enterprise MVC web apps, database migrations, Eloquent ORM, and robust business logic.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fab fa-css3-alt text-primary"></i></div>
+                        <h3>Tailwind & Modern UI</h3>
+                        <p>Custom pixel-perfect responsive layouts, sleek glassmorphism, and interactive micro-animations.</p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-layer-group text-warning"></i></div>
+                        <h3>Web Application Development</h3>
+                        <p>Scalable web applications, POS billing systems, inventory control, and interactive business portals.</p>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-cogs"></i></div>
+                        <h3>Custom Admin Panels</h3>
+                        <p>Dynamic dashboards, role-based access control (RBAC), and interactive business analytics.</p>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-shopping-cart text-primary"></i></div>
+                        <h3>E-Commerce Solutions</h3>
+                        <p>Modern online stores with cart checkout, product catalog management, and payment integrations.</p>
+                    </div>
+                </div>
+                <!-- Service 8 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fas fa-tools"></i></div>
+                        <h3>Optimization & Support</h3>
+                        <p>Core Web Vitals tuning, database query optimization, security patching, and website maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">My Expertise</span>
+                <h2>Technical <span>Skills</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row mt-5 g-4">
+                <!-- Frontend Engineering -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="skills-content glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="feature-icon-circle me-3"><i class="fab fa-react text-info fa-lg"></i></div>
+                            <div>
+                                <h3 class="mb-0 fs-4">Frontend & UI Engineering</h3>
+                                <small class="text-muted">Modern, Reactive & Responsive Web Interfaces</small>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-react text-info me-2"></i>React.js & Redux Toolkit</h5>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-css3-alt text-primary me-2"></i>Tailwind CSS (Utility Design)</h5>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-js-square text-warning me-2"></i>JavaScript (ES6+) & AJAX</h5>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-bootstrap me-2" style="color: #7952b3;"></i>Bootstrap 5 & UI Kits</h5>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-html5 text-danger me-2"></i>HTML5, Semantic Web & CSS3</h5>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Frameworks -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="skills-content glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="feature-icon-circle me-3"><i class="fas fa-server text-primary fa-lg"></i></div>
+                            <div>
+                                <h3 class="mb-0 fs-4">Backend, APIs & Architecture</h3>
+                                <small class="text-muted">High-Concurrency, Robust & Scalable Solutions</small>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-node-js text-success me-2"></i>Node.js & REST APIs</h5>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-laravel text-danger me-2"></i>Laravel (PHP Framework)</h5>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fab fa-php text-primary me-2"></i>PHP (OOP & MVC Design)</h5>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fas fa-network-wired text-warning me-2"></i>RESTful APIs & JWT Authentication</h5>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h5><i class="fas fa-server text-info me-2"></i>MySQL Database & Architecture</h5>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Technology Dials & Cards -->
+            <div class="row text-center mt-5 g-4" data-aos="fade-up">
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="90">
+                                <i class="fab fa-react text-info"></i>
+                            </div>
+                            <h4>React.js</h4>
+                            <span class="text-muted small">Frontend SPAs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="88">
+                                <i class="fab fa-node-js text-success"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <span class="text-muted small">REST Backend</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="88">
+                                <i class="fab fa-laravel text-danger"></i>
+                            </div>
+                            <h4>Laravel</h4>
+                            <span class="text-muted small">MVC Framework</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="92">
+                                <i class="fab fa-css3-alt text-primary"></i>
+                            </div>
+                            <h4>Tailwind CSS</h4>
+                            <span class="text-muted small">Utility Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="90">
+                                <i class="fab fa-php text-primary"></i>
+                            </div>
+                            <h4>PHP 8.x</h4>
+                            <span class="text-muted small">Server-Side OOP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="90">
+                                <i class="fas fa-server text-info"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <span class="text-muted small">Relational DB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="85">
+                                <i class="fab fa-github text-primary"></i>
+                            </div>
+                            <h4>Git & GitHub</h4>
+                            <span class="text-muted small">Version Control</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="tech-stack-card glass-card p-4">
+                        <div class="circular-skill">
+                            <div class="circle" data-percent="95">
+                                <i class="fas fa-code text-primary"></i>
+                            </div>
+                            <h4>VS Code</h4>
+                            <span class="text-muted small">Dev Workflow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">My Portfolio</span>
+                <h2>Recent <span>Projects</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- Interactive Project Filters -->
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" data-aos="fade-up" data-aos-delay="100">
+                <button class="btn project-filter-btn active" data-filter="all"><i class="fas fa-th-large me-1"></i> All Projects</button>
+                <button class="btn project-filter-btn" data-filter="react-app"><i class="fab fa-react me-1"></i> React & Web Apps</button>
+                <button class="btn project-filter-btn" data-filter="ecommerce"><i class="fas fa-shopping-cart me-1"></i> E-Commerce</button>
+                <button class="btn project-filter-btn" data-filter="portal"><i class="fas fa-globe me-1"></i> Web Portals</button>
+            </div>
+
+            <!-- Featured Flagship Project Showcase (BillBook Pro) -->
+            <div class="featured-project-container mb-5 project-item react-app" data-aos="fade-up" data-aos-delay="150">
+                <div class="featured-project-card glass-card p-4 p-lg-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-6">
+                            <div class="featured-project-img-wrap">
+                                <span class="featured-badge"><i class="fas fa-crown me-1"></i> Flagship Project</span>
+                                <span class="live-pill"><span class="live-indicator"></span> Live Software</span>
+                                <img src="billbook_pro.jpg" alt="BillBook Pro AI Powered Billing & Inventory Management" class="img-fluid rounded-4 featured-project-img">
+                                <div class="featured-img-overlay">
+                                    <a href="https://billbook-seven.vercel.app/" target="_blank" class="btn btn-primary btn-sm me-2 shadow">
+                                        <i class="fas fa-external-link-alt me-1"></i> Open Live App
+                                    </a>
+                                    <button class="btn btn-light btn-sm shadow" data-bs-toggle="modal" data-bs-target="#billbookModal">
+                                        <i class="fas fa-info-circle me-1"></i> View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="featured-project-content">
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <span class="badge bg-warning text-dark fw-bold"><i class="fas fa-bolt me-1"></i> Web Application</span>
+                                    <span class="badge bg-primary"><i class="fab fa-react me-1"></i> React & Node.js</span>
+                                    <span class="badge bg-info text-dark fw-bold"><i class="fas fa-robot me-1"></i> AI Powered</span>
+                                </div>
+                                <h3 class="featured-title">BillBook Pro</h3>
+                                <h5 class="featured-subtitle text-primary mb-3">AI Powered Billing & Inventory Management System</h5>
+                                <p class="featured-desc">
+                                    BillBook Pro is an enterprise-grade Billing, Inventory, GST, and Business Management Web Application built with React.js, Node.js, and Tailwind CSS. Designed to streamline commercial operations with automated tax reporting, AI assistant, and role-based administration.
+                                </p>
+                                
+                                <div class="featured-highlights row g-2 mb-4">
+                                    <div class="col-sm-6">
+                                        <div class="highlight-item"><i class="fas fa-check-circle text-primary me-2"></i>Multi-Tenant Architecture</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="highlight-item"><i class="fas fa-check-circle text-primary me-2"></i>6-Role RBAC (Admin to Cashier)</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="highlight-item"><i class="fas fa-check-circle text-primary me-2"></i>POS Billing & Barcode System</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="highlight-item"><i class="fas fa-check-circle text-primary me-2"></i>GST Reports (GSTR-1, 3B)</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="highlight-item"><i class="fas fa-check-circle text-primary me-2"></i>AI Business Assistant</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="highlight-item"><i class="fas fa-check-circle text-primary me-2"></i>WhatsApp & Online Store</div>
+                                    </div>
+                                </div>
+
+                                <div class="tech-pills mb-4">
+                                    <span class="tech-pill"><i class="fab fa-react me-1"></i> React.js</span>
+                                    <span class="tech-pill"><i class="fab fa-node-js me-1"></i> Node.js</span>
+                                    <span class="tech-pill"><i class="fas fa-cubes me-1"></i> Redux Toolkit</span>
+                                    <span class="tech-pill"><i class="fab fa-css3-alt me-1"></i> Tailwind CSS</span>
+                                    <span class="tech-pill"><i class="fas fa-layer-group me-1"></i> ShadCN UI</span>
+                                    <span class="tech-pill"><i class="fas fa-shield-alt me-1"></i> JWT Auth</span>
+                                    <span class="tech-pill"><i class="fas fa-network-wired me-1"></i> REST APIs</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="https://billbook-seven.vercel.app/" target="_blank" class="btn btn-primary pulse-btn">
+                                        <i class="fas fa-external-link-alt me-2"></i> View Live Demo
+                                    </a>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#billbookModal">
+                                        <i class="fas fa-layer-group me-2"></i> Explore All 16 Features
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Projects Grid -->
+            <div class="row g-4" id="projects-grid">
+                <!-- Project 1: BillBook Pro -->
+                <div class="col-lg-6 col-xl-3 col-md-6 project-item react-app" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card glass-card">
+                        <div class="project-img">
+                            <span class="card-featured-tag"><i class="fas fa-crown me-1"></i> Featured</span>
+                            <img src="billbook_pro.jpg"
+                                alt="BillBook Pro" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://billbook-seven.vercel.app/" target="_blank" class="btn btn-primary btn-sm mx-1"><i
+                                        class="fas fa-external-link-alt"></i> Live</a>
+                                <button class="btn btn-light btn-sm mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#billbookModal"><i class="fas fa-info-circle"></i> Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <div class="d-flex gap-1 mb-2">
+                                <span class="badge bg-primary text-dark">React & Node.js</span>
+                                <span class="badge bg-warning text-dark">AI Billing</span>
+                            </div>
+                            <h3>BillBook Pro</h3>
+                            <p>AI-Powered Billing, POS, GST & Inventory Management Web Application.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Nirton Prime -->
+                <div class="col-lg-6 col-xl-3 col-md-6 project-item ecommerce" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card glass-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Nirton Prime" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://nirtonprime.in" target="_blank" class="btn btn-primary btn-sm mx-1"><i
+                                        class="fas fa-external-link-alt"></i> Live</a>
+                                <button class="btn btn-light btn-sm mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal1"><i class="fas fa-info-circle"></i> Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <span class="badge bg-primary mb-2">E-Commerce</span>
+                            <h3>Nirton Prime</h3>
+                            <p>Responsive E-Commerce Website developed using PHP, Bootstrap and MySQL.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: SPLAAS Foundation -->
+                <div class="col-lg-6 col-xl-3 col-md-6 project-item portal" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card glass-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="SPLAAS Foundation" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://splaas.in" target="_blank" class="btn btn-primary btn-sm mx-1"><i
+                                        class="fas fa-external-link-alt"></i> Live</a>
+                                <button class="btn btn-light btn-sm mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal2"><i class="fas fa-info-circle"></i> Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <span class="badge bg-primary mb-2">NGO</span>
+                            <h3>SPLAAS Foundation</h3>
+                            <p>NGO Website with Membership System, Donation Functionality and Admin Panel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Digibrandix -->
+                <div class="col-lg-6 col-xl-3 col-md-6 project-item portal" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card glass-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Digibrandix" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://digibrandix.com" target="_blank" class="btn btn-primary btn-sm mx-1"><i
+                                        class="fas fa-external-link-alt"></i> Live</a>
+                                <button class="btn btn-light btn-sm mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal3"><i class="fas fa-info-circle"></i> Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <span class="badge bg-primary mb-2">Agency</span>
+                            <h3>Digibrandix</h3>
+                            <p>Marketing Agency Website with interactive Lead Generation System.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 0: BillBook Pro Detailed Modal -->
+    <div class="modal fade" id="billbookModal" tabindex="-1" aria-labelledby="billbookModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom border-secondary pb-3">
+                    <div class="d-flex align-items-center">
+                        <div class="modal-icon-header me-3">
+                            <i class="fas fa-file-invoice-dollar text-primary fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="modal-title mb-1" id="billbookModalLabel">BillBook Pro</h4>
+                            <span class="text-primary fw-semibold">AI Powered Billing & Inventory Management System</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <!-- Top Preview Banner -->
+                    <div class="position-relative rounded-4 overflow-hidden mb-4 border border-secondary shadow-lg">
+                        <img src="billbook_pro.jpg" class="img-fluid w-100 modal-preview-img" alt="BillBook Pro Dashboard Preview">
+                        <div class="modal-img-banner-overlay p-4 d-flex justify-content-between align-items-end flex-wrap gap-3">
+                            <div>
+                                <span class="badge bg-primary text-dark mb-2">Production Web App</span>
+                                <h4 class="text-white mb-0">Next-Generation Billing, GST & Inventory Platform</h4>
+                            </div>
+                            <a href="https://billbook-seven.vercel.app/" target="_blank" class="btn btn-primary pulse-btn shadow">
+                                <i class="fas fa-external-link-alt me-2"></i> Launch Live Application
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal Nav Tabs -->
+                    <ul class="nav nav-pills custom-modal-tabs mb-4 justify-content-center" id="billbookTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="pill" data-bs-target="#tab-overview" type="button" role="tab">
+                                <i class="fas fa-info-circle me-2"></i> Overview & Architecture
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="features-tab" data-bs-toggle="pill" data-bs-target="#tab-features" type="button" role="tab">
+                                <i class="fas fa-star me-2"></i> Key Features (16 Modules)
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tech-tab" data-bs-toggle="pill" data-bs-target="#tab-tech" type="button" role="tab">
+                                <i class="fas fa-code me-2"></i> Tech Stack Details
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="billbookTabsContent">
+                        <!-- Tab 1: Overview -->
+                        <div class="tab-pane fade show active" id="tab-overview" role="tabpanel">
+                            <div class="glass-card p-4 mb-4">
+                                <h5 class="text-primary mb-3"><i class="fas fa-quote-left me-2"></i> Project Summary</h5>
+                                <p class="lead fs-6 mb-3">
+                                    <strong>BillBook Pro</strong> is an enterprise-grade Billing, Inventory, GST, and Business Management Web Application built using React.js and Node.js. It is engineered to streamline business operations for retailers, wholesalers, and commercial operations.
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Featuring an intuitive POS terminal, automated tax filing computations, AI-driven business intelligence, WhatsApp commerce integration, and role-based staff permissions, BillBook Pro offers an all-in-one cloud command center for commercial growth.
+                                </p>
+                            </div>
+
+                            <div class="row g-3">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="metric-card glass-card text-center p-3">
+                                        <i class="fas fa-building text-primary fa-2x mb-2"></i>
+                                        <h6 class="mb-1">Multi-Tenant</h6>
+                                        <small class="text-muted">Cloud Ready</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="metric-card glass-card text-center p-3">
+                                        <i class="fas fa-user-shield text-primary fa-2x mb-2"></i>
+                                        <h6 class="mb-1">6 RBAC Roles</h6>
+                                        <small class="text-muted">Granular Security</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="metric-card glass-card text-center p-3">
+                                        <i class="fas fa-receipt text-primary fa-2x mb-2"></i>
+                                        <h6 class="mb-1">GST & POS</h6>
+                                        <small class="text-muted">Instant Invoicing</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="metric-card glass-card text-center p-3">
+                                        <i class="fas fa-robot text-primary fa-2x mb-2"></i>
+                                        <h6 class="mb-1">AI Assistant</h6>
+                                        <small class="text-muted">Intelligent Insights</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Key Features (16 Modules) -->
+                        <div class="tab-pane fade" id="tab-features" role="tabpanel">
+                            <div class="row g-3">
+                                <!-- 1. Multi-Tenant -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-layer-group text-primary"></i></div>
+                                            <h6 class="mb-0">Multi-Tenant Architecture</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Complete data isolation per company with individual configurations and branding.</p>
+                                    </div>
+                                </div>
+                                <!-- 2. RBAC -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-users-cog text-primary"></i></div>
+                                            <h6 class="mb-0">Role-Based Access Control</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Super Admin, Admin, Manager, Accountant, Sales, and Cashier access tiers.</p>
+                                    </div>
+                                </div>
+                                <!-- 3. POS Billing -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-cash-register text-primary"></i></div>
+                                            <h6 class="mb-0">POS Billing System</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Lightning-fast billing terminal with barcode scanning, discounts, and instant thermal receipt printing.</p>
+                                    </div>
+                                </div>
+                                <!-- 4. Inventory -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-boxes text-primary"></i></div>
+                                            <h6 class="mb-0">Inventory & Stock Management</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Real-time stock valuation, item tracking, low-stock threshold alerts & batch tracking.</p>
+                                    </div>
+                                </div>
+                                <!-- 5. Purchase & Sales -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-file-invoice-dollar text-primary"></i></div>
+                                            <h6 class="mb-0">Purchase & Sales Management</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Full purchase orders, delivery challans, sales receipts, credit notes & returns handling.</p>
+                                    </div>
+                                </div>
+                                <!-- 6. Customer & Supplier -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-address-book text-primary"></i></div>
+                                            <h6 class="mb-0">Customer & Supplier Management</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Party profiles, transaction timelines, credit limits, and dues reminders.</p>
+                                    </div>
+                                </div>
+                                <!-- 7. Accounts & Ledger -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-book text-primary"></i></div>
+                                            <h6 class="mb-0">Accounts & Ledger Management</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Automated double-entry bookkeeping, cash/bank journals & balance sheets.</p>
+                                    </div>
+                                </div>
+                                <!-- 8. GST Billing & Tax Reports -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-percentage text-primary"></i></div>
+                                            <h6 class="mb-0">GST Billing & Tax Reports</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">GSTR-1 & GSTR-3B tax calculations, HSN/SAC codes & tax summaries.</p>
+                                    </div>
+                                </div>
+                                <!-- 9. Dashboard Analytics -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-chart-line text-primary"></i></div>
+                                            <h6 class="mb-0">Dashboard & Business Analytics</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Interactive visual charts, revenue trends, profit margins & performance metrics.</p>
+                                    </div>
+                                </div>
+                                <!-- 10. Employee & Attendance -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-user-clock text-primary"></i></div>
+                                            <h6 class="mb-0">Employee & Attendance Management</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Staff management, daily attendance logging, work shifts & salary calculation.</p>
+                                    </div>
+                                </div>
+                                <!-- 11. Multi-Branch -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-code-branch text-primary"></i></div>
+                                            <h6 class="mb-0">Multi-Branch Management</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Centralized control across multiple retail outlets, shops, and warehouses.</p>
+                                    </div>
+                                </div>
+                                <!-- 12. Online Store & WhatsApp -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fab fa-whatsapp text-primary"></i></div>
+                                            <h6 class="mb-0">Online Store & WhatsApp Store</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Digital product catalog enabling direct orders and billing via WhatsApp.</p>
+                                    </div>
+                                </div>
+                                <!-- 13. AI Business Assistant -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-robot text-primary"></i></div>
+                                            <h6 class="mb-0">AI Business Assistant</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Smart forecasting, inventory restocking suggestions & sales optimization insights.</p>
+                                    </div>
+                                </div>
+                                <!-- 14. Responsive Admin Dashboard -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-desktop text-primary"></i></div>
+                                            <h6 class="mb-0">Responsive Admin Dashboard</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">Smooth glassmorphic UI, responsive across mobile, tablet, and widescreen desktop.</p>
+                                    </div>
+                                </div>
+                                <!-- 15. Secure JWT Auth -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-lock text-primary"></i></div>
+                                            <h6 class="mb-0">Secure JWT Authentication</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">JSON Web Token authentication, bcrypt password hashing & protected API routes.</p>
+                                    </div>
+                                </div>
+                                <!-- 16. Cloud-Ready & REST APIs -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="feature-module-card glass-card p-3 h-100">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="feature-icon-circle me-2"><i class="fas fa-cloud text-primary"></i></div>
+                                            <h6 class="mb-0">Cloud-Ready Architecture & REST APIs</h6>
+                                        </div>
+                                        <p class="text-muted small mb-0">High-performance modular REST API endpoints deployed on cloud infrastructure.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: Tech Stack -->
+                        <div class="tab-pane fade" id="tab-tech" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="glass-card p-4 h-100">
+                                        <h5 class="text-primary mb-3"><i class="fas fa-laptop-code me-2"></i> Frontend Architecture</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-3"><i class="fab fa-react text-primary me-2"></i><strong>React.js:</strong> Component-driven reactive UI & state architecture</li>
+                                            <li class="mb-3"><i class="fas fa-cubes text-primary me-2"></i><strong>Redux Toolkit:</strong> Centralized client-side state management</li>
+                                            <li class="mb-3"><i class="fab fa-css3-alt text-primary me-2"></i><strong>Tailwind CSS:</strong> Utility-first responsive styling system</li>
+                                            <li class="mb-0"><i class="fas fa-palette text-primary me-2"></i><strong>ShadCN UI:</strong> Accessible and modern UI component primitives</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="glass-card p-4 h-100">
+                                        <h5 class="text-primary mb-3"><i class="fas fa-server me-2"></i> Backend & Database</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-3"><i class="fab fa-node-js text-primary me-2"></i><strong>Node.js:</strong> Fast asynchronous event-driven runtime & REST API architecture</li>
+                                            <li class="mb-3"><i class="fas fa-server text-primary me-2"></i><strong>MySQL:</strong> Relational database design, transactions, and indexing</li>
+                                            <li class="mb-3"><i class="fas fa-network-wired text-primary me-2"></i><strong>RESTful APIs:</strong> Modular API endpoints for billing and inventory</li>
+                                            <li class="mb-0"><i class="fas fa-shield-alt text-primary me-2"></i><strong>JWT & Security:</strong> Robust token authorization and encryption</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary justify-content-between">
+                    <div>
+                        <span class="text-muted small"><i class="fas fa-link me-1"></i> Hosted on Vercel:</span>
+                        <a href="https://billbook-seven.vercel.app/" target="_blank" class="ms-1 text-primary fw-semibold">billbook-seven.vercel.app</a>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+                        <a href="https://billbook-seven.vercel.app/" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fas fa-external-link-alt me-1"></i> Open Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">Nirton Prime Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded mb-3" alt="Nirton Prime">
+                    <p>A full-fledged responsive E-Commerce platform built from scratch. Features include product
+                        catalog, shopping cart, user authentication, and secure checkout simulation.</p>
+                    <div class="mt-3">
+                        <strong>Technologies Used:</strong>
+                        <div class="mt-2">
+                            <span class="badge bg-secondary me-1">PHP</span>
+                            <span class="badge bg-secondary me-1">MySQL</span>
+                            <span class="badge bg-secondary me-1">Bootstrap 5</span>
+                            <span class="badge bg-secondary">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">SPLAAS Foundation Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded mb-3" alt="SPLAAS Foundation">
+                    <p>A comprehensive web portal for an NGO. Includes custom membership registration, secure donation
+                        flow tracking, and a powerful admin panel to manage records and content.</p>
+                    <div class="mt-3">
+                        <strong>Technologies Used:</strong>
+                        <div class="mt-2">
+                            <span class="badge bg-secondary me-1">PHP</span>
+                            <span class="badge bg-secondary me-1">MySQL</span>
+                            <span class="badge bg-secondary me-1">AJAX</span>
+                            <span class="badge bg-secondary">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">Digibrandix Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded mb-3" alt="Digibrandix">
+                    <p>A sleek, high-performance website for a marketing agency designed to maximize conversions.
+                        Integrates a custom lead generation system and CRM connection.</p>
+                    <div class="mt-3">
+                        <strong>Technologies Used:</strong>
+                        <div class="mt-2">
+                            <span class="badge bg-secondary me-1">HTML5/CSS3</span>
+                            <span class="badge bg-secondary me-1">JavaScript</span>
+                            <span class="badge bg-secondary me-1">PHP</span>
+                            <span class="badge bg-secondary">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience & Education Section -->
+    <section id="resume" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Experience -->
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="section-title mb-5">
+                        <span class="subtitle">My Journey</span>
+                        <h2>Professional <span>Experience</span></h2>
+                        <div class="line ms-0"></div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-item glass-card p-4">
+                            <div class="timeline-dot"></div>
+                            <h4 class="role">Web Developer</h4>
+                            <h5 class="company text-primary"><i class="fas fa-building me-2"></i>ZDC Tech Global
+                                Solutions, Jaipur</h5>
+                            <span class="duration text-muted d-block mb-3"><i
+                                    class="fas fa-briefcase me-2"></i>Full-Time Job (Currently Working)</span>
+
+                            <h6 class="mb-2">Key Responsibilities:</h6>
+                            <ul class="responsibilities-list">
+                                <li><i class="fas fa-check text-primary me-2"></i> Responsive Website Development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Admin Panel Development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Database Integration & Management
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Website Optimization for performance
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Bug Fixing & Maintenance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Feature Development based on client
+                                    specs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-title mb-5">
+                        <span class="subtitle">Academic</span>
+                        <h2>My <span>Education</span></h2>
+                        <div class="line ms-0"></div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-item glass-card p-4 mb-4">
+                            <div class="timeline-dot"></div>
+                            <h4>Web Development Course</h4>
+                            <h5 class="institution text-primary">Pratap Nagar Jaipur</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>Completed May
+                                2024</span>
+                        </div>
+
+                        <div class="timeline-item glass-card p-4 mb-4">
+                            <div class="timeline-dot"></div>
+                            <h4>ITI Diploma</h4>
+                            <h5 class="institution text-primary">UP Board</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>2022</span>
+                        </div>
+
+                        <div class="timeline-item glass-card p-4 mb-4">
+                            <div class="timeline-dot"></div>
+                            <h4>Senior Secondary (12th)</h4>
+                            <h5 class="institution text-primary">UP Board</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>2020</span>
+                        </div>
+
+                        <div class="timeline-item glass-card p-4">
+                            <div class="timeline-dot"></div>
+                            <h4>High School (10th)</h4>
+                            <h5 class="institution text-primary">UP Board</h5>
+                            <span class="year text-muted"><i class="fas fa-graduation-cap me-2"></i>2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Interests</span>
+                <h2>My <span>Hobbies</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row justify-content-center mt-5 g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-cricket"></i>
+                            <!-- Note: Using baseball-bat-ball or similar if cricket missing, but let's use a generic ball or person-batting -->
+                            <i class="fas fa-baseball-bat-ball"></i>
+                        </div>
+                        <h4>Cricket</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-headphones-alt"></i>
+                        </div>
+                        <h4>Listening to Music</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>Reading Books</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-camera retro"></i>
+                        </div>
+                        <h4>Photography</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Traveling</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-gamepad text-primary"></i>
+                        </div>
+                        <h4>Gaming</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="hobby-card glass-card text-center p-4">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-laptop-code text-info"></i>
+                        </div>
+                        <h4>Coding & Tech</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Get In Touch</span>
+                <h2>Contact <span>Me</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info glass-card p-5 h-100">
+                        <h3 class="mb-4">Let's Discuss Your Project</h3>
+                        <p class="text-muted mb-4">Feel free to reach out to me for any web development projects,
+                            freelance opportunities, or job offers.</p>
+
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box-sm">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Phone</h5>
+                                <a href="tel:+917307054629" class="text-decoration-none">7307054629</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box-sm">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Email</h5>
+                                <a href="mailto:jatins7008@gmail.com"
+                                    class="text-decoration-none">jatins7008@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-center mb-5">
+                            <div class="icon-box-sm">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Location</h5>
+                                <span>Shahjahanpur, Uttar Pradesh</span>
+                            </div>
+                        </div>
+
+                        <h4>Follow Me</h4>
+                        <div class="social-icons-contact mt-3">
+                            <a href="https://www.linkedin.com/jobs/" class="social-icon-sm"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/jatins7008" target="_blank" class="social-icon-sm" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://x.com/" class="social-icon-sm"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="social-icon-sm"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+                    <div class="contact-form-wrapper glass-card p-5">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" name="subject" class="form-control" id="subject"
+                                            placeholder="Subject" required>
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="form-floating">
+                                        <textarea name="message" class="form-control" id="message" placeholder="Message"
+                                            style="height: 150px" required></textarea>
+                                        <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Message <i
+                                            class="fas fa-paper-plane ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-container glass-card p-2 mt-4" data-aos="fade-up">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14109.924970551272!2d79.90359744106118!3d27.85648368140479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399fa34bb3f2cf65%3A0x32c47eeeb488eeb0!2sDalel%20Ganj%2C%20Shahjahanpur%2C%20Uttar%20Pradesh%20242001!5e0!3m2!1sen!2sin!4v1781244238544!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a class="navbar-brand logo mb-3 d-block" href="#home">JS<span>.</span></a>
+                    <p class="text-muted pe-lg-5">A passionate Web Developer focused on crafting clean, responsive, and
+                        user-friendly web experiences.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right me-2"></i>About</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right me-2"></i>Projects</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title">Connect</h4>
+                    <!-- Facebook -->
+<a href="https://www.facebook.com/singh.shabh.3979" class="me-3">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/" class="me-3">
+  <i class="fab fa-instagram"></i>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/jobs/">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+    <p class="text-muted"><i class="fas fa-envelope me-2 text-primary"></i> jatins7008@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-5 pt-4 border-top border-secondary">
+                <p class="mb-0">&copy; 2026 Jatin Singh. Web Developer (React.js, Node.js, Laravel, Tailwind CSS). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
