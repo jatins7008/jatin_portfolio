@@ -23,12 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const typingElement = document.querySelector('.typing-text');
     if (typingElement) {
         new Typed('.typing-text', {
-            strings: ['Web Developer', 'PHP Developer', 'Frontend Designer'],
-            typeSpeed: 70,
-            backSpeed: 50,
+            strings: [
+                'Web Developer',
+                'React.js Developer',
+                'Laravel & PHP Developer',
+                'Tailwind CSS & UI Designer'
+            ],
+            typeSpeed: 55,
+            backSpeed: 35,
             backDelay: 1500,
             loop: true,
-            showCursor: false // using custom cursor in html if needed, else true
+            showCursor: false
         });
     }
 
@@ -231,6 +236,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 contactForm.reset();
             }, 1000);
+        });
+    }
+
+    // 11. Interactive Project Filtering
+    const filterButtons = document.querySelectorAll('.project-filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    if (filterButtons.length > 0 && projectItems.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active state on buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.style.display = '';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 20);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.92)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 280);
+                    }
+                });
+            });
         });
     }
 });
