@@ -270,4 +270,107 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // 12. Interactive Footer Features
+    // A. Real-Time IST Digital Clock
+    const liveTimeElement = document.getElementById('footerLiveTime');
+    if (liveTimeElement) {
+        function updateLiveTime() {
+            try {
+                const options = {
+                    timeZone: 'Asia/Kolkata',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: true
+                };
+                liveTimeElement.textContent = new Intl.DateTimeFormat('en-US', options).format(new Date());
+            } catch (err) {
+                const now = new Date();
+                liveTimeElement.textContent = now.toLocaleTimeString();
+            }
+        }
+        updateLiveTime();
+        setInterval(updateLiveTime, 1000);
+    }
+
+    // B. Interactive One-Click Email Copy
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const footerEmailText = document.getElementById('footerEmailText');
+
+    if (copyEmailBtn && footerEmailText) {
+        copyEmailBtn.addEventListener('click', () => {
+            const email = footerEmailText.textContent.trim();
+            const copySuccess = () => {
+                copyEmailBtn.classList.add('copied');
+                copyEmailBtn.innerHTML = '<i class="fas fa-check me-1"></i><span>Copied!</span>';
+                setTimeout(() => {
+                    copyEmailBtn.classList.remove('copied');
+                    copyEmailBtn.innerHTML = '<i class="fas fa-copy me-1"></i><span>Copy</span>';
+                }, 2200);
+            };
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(copySuccess).catch(() => {
+                    const temp = document.createElement('input');
+                    temp.value = email;
+                    document.body.appendChild(temp);
+                    temp.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(temp);
+                    copySuccess();
+                });
+            } else {
+                const temp = document.createElement('input');
+                temp.value = email;
+                document.body.appendChild(temp);
+                temp.select();
+                document.execCommand('copy');
+                document.body.removeChild(temp);
+                copySuccess();
+            }
+        });
+    }
+
+    // C. Footer Back-To-Top Button
+    const footerBackToTop = document.getElementById('footerBackToTop');
+    if (footerBackToTop) {
+        footerBackToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // D. Interactive Spark / Inspiration Easter Egg
+    const easterEggBtn = document.getElementById('footerEasterEggBtn');
+    const easterEggCount = document.getElementById('easterEggCount');
+    if (easterEggBtn && easterEggCount) {
+        const sparks = [
+            'Simplicity is prerequisite for reliability 🚀',
+            'Code is poetry in motion ✨',
+            'First solve the problem, then write the code 💡',
+            'Fix the cause, not the symptom ⚡',
+            'Make it work, make it right, make it fast 🔥',
+            'Never stop creating & innovating 🌟'
+        ];
+        let sparkIndex = 0;
+        easterEggBtn.addEventListener('click', () => {
+            easterEggBtn.style.transform = 'scale(0.92)';
+            setTimeout(() => {
+                easterEggBtn.style.transform = 'scale(1)';
+            }, 120);
+
+            sparkIndex = (sparkIndex + 1) % sparks.length;
+            easterEggCount.textContent = sparks[sparkIndex];
+            easterEggBtn.classList.add('btn-warning');
+            easterEggBtn.classList.remove('btn-outline-secondary');
+
+            setTimeout(() => {
+                easterEggBtn.classList.remove('btn-warning');
+                easterEggBtn.classList.add('btn-outline-secondary');
+            }, 3500);
+        });
+    }
 });
